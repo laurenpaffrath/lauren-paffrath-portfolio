@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import { Box, Typography } from "@mui/material";
 import ImageStepper from "../../components/imageStepper";
 import { SurroundText, CornerBorder } from "../../components/titles";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -38,16 +39,29 @@ const StyledTab = styled((props) => <Tab {...props} />)(
 const SelectedContent = styled(Box)`
   display: flex;
   width: 100%;
+  gap: 20px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `
 
 const ContentSection = styled(Box)`
   width: 50%;
   align-self: center;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 function TabContent(props) {
-
     const {name, images, description} = props.info;
+    const theme = useTheme();
+    const isMediumScreen = useMediaQuery(theme.breakpoints.down('md')); // Adjust the breakpoint as needed
 
     return(
         <>
@@ -55,8 +69,8 @@ function TabContent(props) {
                 <ImageStepper images={images}/>
             </ContentSection>
             <ContentSection color="#fff">
-                <CornerBorder sx={{padding: '50px'}}>
-                    <SurroundText sx={{fontSize:"35px", letterSpacing: '0px'}}>{name}</SurroundText>
+                <CornerBorder sx={{ m: isMediumScreen ? '5px' : '10px' }}>
+                    <SurroundText sx={{letterSpacing: '0px'}}>{name}</SurroundText>
                     <Typography variant="h6" sx={{mt: "15px"}}>{description}</Typography>
                 </CornerBorder>
             </ContentSection>
@@ -67,6 +81,7 @@ function TabContent(props) {
 export default function Experience(props) {
   const theme = useTheme();
   const { title, itemList } = props.data;
+  const isMediumScreen = useMediaQuery(theme.breakpoints.down('md')); // Adjust the breakpoint as needed
 
   const [value, setValue] = React.useState(0);
 
@@ -79,25 +94,25 @@ export default function Experience(props) {
       <Box
         sx={{
           backgroundColor: `${theme.palette.background.main}`,
-          padding: "30px",
-          height: "100%"
         }}
       >
-        <SurroundText
-          sx={{
-            fontSize: "80px",
-            borderRadius: "20px",
-            border: `3px solid ${theme.palette.tertiary.main}`,
-          }}
-        >
-          {title}
-        </SurroundText>
+        <Box sx={{padding: "30px",}}>
+          <SurroundText
+            sx={{
+              fontSize: isMediumScreen ? '40px' : '80px',
+              borderRadius: "20px",
+              border: `3px solid ${theme.palette.tertiary.main}`,
+            }}
+          >
+            {title}
+          </SurroundText>
+        </Box>
       <Box sx={{ borderBottom: 1, borderColor: "divider", pt: "20px" }}>
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
-          sx={{color: "#fff"}}
+          sx={{color: "#fff", marginX: isMediumScreen ? '10px' : '30px'}}
         >
           <StyledTab label={itemList[0].tabname} {...a11yProps(0)} />
           <StyledTab label={itemList[1].tabname} {...a11yProps(1)} />

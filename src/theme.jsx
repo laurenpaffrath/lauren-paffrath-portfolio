@@ -24,7 +24,7 @@ const theme = createTheme({
     white: {
       main: '#ffffff'
     }
-  }
+  },
 });
 
 export default theme;

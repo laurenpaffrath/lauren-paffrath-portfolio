@@ -19,34 +19,73 @@ export default function Home(props) {
       ${theme.palette.primary.main},
       ${theme.palette.secondary.main}
     );
+
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+      border-left: 2px solid ${theme.palette.tertiary.main};
+      padding: 5px 0px 5px 20px;
+    }
   `;
 
   const HomeSection = styled(Box)`
     display: flex;
     width: 100%;
-    height: 80%;
     padding: 50px;
     gap: 10px;
     background: ${theme.palette.background.main};
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      padding: 10px;
+
+      h2 {
+        font-size: 2.5em;
+      }
+  }
   `;
 
+  const AboutSection = styled(Box)`
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  gap: 10px;
+  background: ${theme.palette.background.main};
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+  flex-direction: column-reverse;
+  padding: 10px;
+}
+`;
+
   const GreetingTextBox = styled(Box)`
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1000px) {
+      text-align: center;
+      width: 100%;
+    }
   `;
 
   const GreetingImage = styled(Box)`
-    border-radius: 999px;
-    display: block;
-    width: calc(100vw - 80px);
-    max-width: 500px;
-    max-height: 500px;
-    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     overflow: hidden;
     background-color: ${theme.palette.tertiary.main};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    max-height: 500px;
+    max-width: 500px;
   `;
 
   const GreetingImageWrapper = styled(Box)`
@@ -113,7 +152,7 @@ export default function Home(props) {
         <GreetingTextBox>
           <Box>
             <Typography
-              variant="h1"
+              variant="h2"
               sx={{
                 paddingBottom: "50px",
                 color: "#ffffff",
@@ -136,7 +175,7 @@ export default function Home(props) {
           <path d="M0 0 L50 100 L100 0 Z" />
         </StyledDivider>
       </Box>
-      <HomeSection sx={{ background: `${theme.palette.background.secondary}` }}>
+      <AboutSection sx={{ background: `${theme.palette.background.secondary}` }}>
         <Box sx={{ display: "flex", alignSelf: "center", marginRight: "70px" }}>
           <GreetingImageWrapper>
             <GreetingImage
@@ -160,7 +199,7 @@ export default function Home(props) {
             ))}
           </AboutText>
         </CornerBorder>
-      </HomeSection>
+      </AboutSection>
     </>
   );
 }

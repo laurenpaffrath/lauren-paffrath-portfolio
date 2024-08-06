@@ -64,7 +64,7 @@ function NavBar(props) {
       <AppBar color="background" component="nav">
         <Toolbar>
           <IconButton
-            color="inherit"
+            color="white"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}

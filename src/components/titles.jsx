@@ -5,13 +5,17 @@ const SurroundText = styled(Box)(({ theme }) => ({
   fontFamily: '"Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif',
   backgroundClip: 'text',
   color: theme.palette.tertiary.main,
-  fontSize: '60px',
+  fontSize: '3em',
   fontWeight: 700,
   letterSpacing: '4px',
   padding: 'calc(10px / 2)',
   WebkitTextStrokeColor: 'transparent',
   WebkitTextStrokeWidth: '4px',
   textAlign: 'center',
+
+  [theme.breakpoints.down('md')]: {
+    fontSize: '2em',
+  },
 }));
 
 const CornerBorder = styled(Box)(({ theme }) => ({
