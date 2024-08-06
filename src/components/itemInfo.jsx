@@ -30,6 +30,12 @@ export default function ItemInfo() {
     object-fit: contain;
     margin: auto;
     border-radius: 10px;
+
+    @media (max-width: 600px) {
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 100%;
+    }
   `;
 
   const StyledDivider = styled("svg")({
