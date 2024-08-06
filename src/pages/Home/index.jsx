@@ -61,6 +61,21 @@ export default function Home(props) {
 }
 `;
 
+const AboutSectionContent1 = styled(Box)`
+  width: 50%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+`
+const AboutSectionContent2 = styled(Box)`
+  width: 50%;
+  max-width: 550px;
+  margin: auto;
+
+  @media (max-width: 1000px) {
+    width: auto;
+`
+
   const GreetingTextBox = styled(Box)`
     width: 50%;
     display: flex;
@@ -176,15 +191,16 @@ export default function Home(props) {
         </StyledDivider>
       </Box>
       <AboutSection sx={{ background: `${theme.palette.background.secondary}` }}>
-        <Box sx={{ display: "flex", alignSelf: "center", marginRight: "70px" }}>
-          <GreetingImageWrapper>
+        <AboutSectionContent2 >
+          <GreetingImageWrapper >
             <GreetingImage
               component="img"
               src={pictures[1]}
               sx={{ objectFit: "cover" }}
             />
           </GreetingImageWrapper>
-        </Box>
+          </AboutSectionContent2>
+        <AboutSectionContent1>
         <CornerBorder>
           <AboutText>
             <SurroundText>About Me</SurroundText>
@@ -199,6 +215,7 @@ export default function Home(props) {
             ))}
           </AboutText>
         </CornerBorder>
+          </AboutSectionContent1>
       </AboutSection>
     </>
   );
