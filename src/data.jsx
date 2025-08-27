@@ -34,6 +34,8 @@ import gracemed1 from "./assets/experience/graceMedical/Gracemedical logo.png"
 import gracemed2 from "./assets/experience/graceMedical/Grace Medical Internship 2.jpg"
 import gracemed3 from "./assets/experience/graceMedical/Grace Medical Internship3.jpg"
 
+import exactech1 from "./assets/experience/exactech/exactech1.jpeg"
+
 //imports for projects
 import bmes1 from "./assets/projects/bmes/bmes1.jpg";
 import bmes2 from "./assets/projects/bmes/bmes2.jpg";
@@ -76,6 +78,8 @@ import cad1 from "./assets/projects/solidworkPrints/photo1.jpg";
 import cad2 from "./assets/projects/solidworkPrints/photo2.jpg";
 import cad3 from "./assets/projects/solidworkPrints/photo3.png";
 import cad4 from "./assets/projects/solidworkPrints/photo4.jpg";
+
+import ADMclass from "./assets/projects/solidworkPrints/photo4.jpg";
 
 export const data = {
   home: {
@@ -145,12 +149,25 @@ export const data = {
             tabname: "BioDesign",
             images: [biodesign1, biodesign2, biodesign3],
             description: "At the BioDesign Clinical Immersion Internship, I attended Hanger’s Clinic, Orlando Health, and Brooke’s Rehab. Here, I collaborated with physical therapists and patients to identify clinical needs and translate them into practical solutions. I brainstormed 110 engineering design ideas aimed at addressing and enhancing the challenges faced by clinicians in their daily practice. Additionally, we tried various types of physical therapy equipment, as seen in the accompanying images, to better understand their functionality and identify potential areas for improvement."
+        },
+        {
+            name: "Product and Development Engineering Internship with Exactech",
+            tabname: "Exactech",
+            images: [exactech1],
+            description: "During my Grace Medical Internship, I revised SolidWorks models and drawings of ear implants and tubes while concurrently writing an engineering report. I developed a technique for laser welding exotic alloys used in implants, enhancing their manufacturability. I designed and manufactured a Tympanic Membrane Simulator to enable new product Design Validation of ear tubes. I participated in the implant trial at UT's cadaver lab, observing the product's functionality in cadaver specimens. I produced 3D printed and injection silicone molded models of ear anatomy and the tympanic membrane for marketing purposes. Additionally, I created and modified multiple engineering reports, COs, drawings, and controlled documents within the QMS. I conducted testing on novel manufacturing processes, compiling and presenting results in a comprehensive report. I utilized microscopes to assess implants and operated lathes, laser welders, and various machinery for manufacturing processes."
         }
     ]
   },
   projects: {
     title: "Projects",
     itemList: [
+      {
+        name: "Advanced Design and Manufacturing Class Projects",
+        path: "admclass",
+        images: [ADMclass],
+        description:
+          "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversee the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities include researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also manage the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. Once the components are procured, I will lead the wiring and coding efforts with my team. Additionally, I organize weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
+      },
       {
         name: "Senior Design Project - PAEX",
         path: "senior-design",

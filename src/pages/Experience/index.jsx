@@ -116,6 +116,7 @@ export default function Experience(props) {
         >
           <StyledTab label={itemList[0].tabname} {...a11yProps(0)} />
           <StyledTab label={itemList[1].tabname} {...a11yProps(1)} />
+          <StyledTab label={itemList[2].tabname} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -123,6 +124,9 @@ export default function Experience(props) {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <TabContent info={itemList[1]}/>
+      </CustomTabPanel>
+       <CustomTabPanel value={value} index={2}>
+        <TabContent info={itemList[2]}/>
       </CustomTabPanel>
       </Box>
     </>
