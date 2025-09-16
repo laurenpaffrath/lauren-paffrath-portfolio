@@ -79,10 +79,10 @@ import cad2 from "./assets/projects/solidworkPrints/photo2.jpg";
 import cad3 from "./assets/projects/solidworkPrints/photo3.png";
 import cad4 from "./assets/projects/solidworkPrints/photo4.jpg";
 
-import ADMclass from ".\assets\projects\adm\adm1.jpg";
-import ADMclass from ".\assets\projects\adm\adm2.jpg";
-import ADMclass from ".\assets\projects\adm\adm3.jpg";
-import ADMclass from ".\assets\projects\adm\adm4.jpg";
+import ADM1 from ".\assets\projects\adm\adm1.jpg";
+import ADM2 from ".\assets\projects\adm\adm2.jpg";
+import ADM3 from ".\assets\projects\adm\adm3.jpg";
+import ADM4 from ".\assets\projects\adm\adm4.jpg";
 
 export const data = {
   home: {
@@ -167,7 +167,7 @@ export const data = {
       {
         name: "Cystoscope Design",
         path: "admclass",
-        images: [ADMclass],
+        images: [ADM1, ADM2, ADM3, ADM4],
         description:
           "Cystoscope Design was a Arduino Fusion CAD project for my Advanced Design and Manufacturing class.",
       },
