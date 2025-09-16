@@ -73,6 +73,12 @@ import thetatau2 from "./assets/projects/thetatau/thetatau2.jpg";
 import sd1 from "./assets/projects/seniorDesign/sd1.jpg";
 import sd2 from "./assets/projects/seniorDesign/sd2.jpg";
 import sd3 from "./assets/projects/seniorDesign/sd3.jpg";
+import sd4 from "./assets/projects/seniorDesign/sd4.jpg";
+import sd5 from "./assets/projects/seniorDesign/sd5.jpg";
+import sd6 from "./assets/projects/seniorDesign/sd6.jpg";
+import sd7 from "./assets/projects/seniorDesign/sd7.jpg";
+import sd8 from "./assets/projects/seniorDesign/sd8.jpg";
+import sd9 from "./assets/projects/seniorDesign/sd9.jpg";
 
 import cad1 from "./assets/projects/solidworkPrints/photo1.jpg";
 import cad2 from "./assets/projects/solidworkPrints/photo2.jpg";
@@ -82,7 +88,6 @@ import cad4 from "./assets/projects/solidworkPrints/photo4.jpg";
 import ADM1 from "./assets/projects/adm/adm1.jpg";
 import ADM2 from "./assets/projects/adm/adm2.jpg";
 import ADM3 from "./assets/projects/adm/adm3.jpg";
-import ADM4 from "./assets/projects/adm/adm4.jpg";
 
 export const data = {
   home: {
@@ -90,7 +95,7 @@ export const data = {
     subtitle: "Passionate Biomedical Engineer driven to innovate at the intersection of engineering and healthcare. ",
     about: [
       "Witnessing an open-heart surgery in high school sparked my fascination with the intricate work of surgeons and the immense potential of surgical robots to improve minimally invasive procedures. This experience ignited my passion for biomedical engineering, particularly in the field of robotic surgery.",
-      "As a Master's of Medical Technology Design student at Duke Undersity with a background in Mechanical Engineering, I actively translate my passion into action. During my internships at Exactech and Grace Medical, I gained hands-on experience in medical device design and validation by collaborating with surgeons, applying design for manufacturing principles, writing QMS documentation, developing novel welding and prototyping techniques, and observing implant functionality in cadaver trials. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
+      "Currently pursuing a Master's in Medical Technology Design at Duke University building on my Mechanical Engineering background, I actively translate my passion into action. During my internships at Exactech and Grace Medical, I gained hands-on experience in medical device design and validation by collaborating with surgeons, applying design for manufacturing principles, writing QMS documentation, developing novel welding and prototyping techniques, and observing implant functionality in cadaver trials. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
       "I'm eager to leverage my skills and knowledge to contribute meaningfully to the advancement of medical devices. Explore my portfolio to see how my experiences can benefit your project, or contact me to discuss how I can contribute to the future of healthcare technology.",
     ],
     pictures: [home_picture, about_picture],
@@ -167,14 +172,14 @@ export const data = {
       {
         name: "Cystoscope Design",
         path: "admclass",
-        images: [ADM1, ADM2, ADM3, ADM4],
+        images: [ADM1, ADM2, ADM3],
         description:
           "Cystoscope Design was a Arduino Fusion CAD project for my Advanced Design and Manufacturing class.",
       },
       {
         name: "Senior Design Project - PAEX",
         path: "senior-design",
-        images: [sd1, sd2, sd3],
+        images: [sd1, sd2, sd3, sd4, sd5, sd6, sd7, sd8, sd9],
         description:
           "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversaw the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities included researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also managed the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. I lead the wiring and coding efforts with my team. Additionally, I organized weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
       },
