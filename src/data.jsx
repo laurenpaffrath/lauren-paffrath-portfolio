@@ -70,8 +70,8 @@ import maze3 from "./assets/projects/mazeRacing/photo3.jpeg";
 import thetatau1 from "./assets/projects/thetatau/thetatau1.jpg";
 import thetatau2 from "./assets/projects/thetatau/thetatau2.jpg";
 
-import sd1 from "./assets/projects/seniorDesign/sd1.jpg";
-import sd2 from "./assets/projects/seniorDesign/sd2.jpg";
+import sd1 from "./assets/projects/seniorDesign/sd1.jpeg";
+import sd2 from "./assets/projects/seniorDesign/sd2.jpeg";
 import sd3 from "./assets/projects/seniorDesign/sd3.jpg";
 import sd4 from "./assets/projects/seniorDesign/sd4.jpg";
 import sd5 from "./assets/projects/seniorDesign/sd5.jpg";
@@ -95,7 +95,7 @@ export const data = {
     subtitle: "Passionate Biomedical Engineer driven to innovate at the intersection of engineering and healthcare. ",
     about: [
       "Witnessing an open-heart surgery in high school sparked my fascination with the intricate work of surgeons and the immense potential of surgical robots to improve minimally invasive procedures. This experience ignited my passion for biomedical engineering, particularly in the field of robotic surgery.",
-      "Currently pursuing a Master's in Medical Technology Design at Duke University building on my Mechanical Engineering background, I actively translate my passion into action. During my internships at Exactech and Grace Medical, I gained hands-on experience in medical device design and validation by collaborating with surgeons, applying design for manufacturing principles, writing QMS documentation, developing novel welding and prototyping techniques, and observing implant functionality in cadaver trials. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
+      "Currently pursuing a Master's in Medical Technology Design at Duke University building on my Mechanical Engineering background, I turn my passion into action. During my internships at Exactech and Grace Medical, I gained hands-on experience in medical device design and validation by collaborating with surgeons, applying design for manufacturing principles, writing QMS documentation, developing novel welding and prototyping techniques, and observing implant functionality in cadaver trials. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
       "I'm eager to leverage my skills and knowledge to contribute meaningfully to the advancement of medical devices. Explore my portfolio to see how my experiences can benefit your project, or contact me to discuss how I can contribute to the future of healthcare technology.",
     ],
     pictures: [home_picture, about_picture],
