@@ -72,12 +72,9 @@ import thetatau2 from "./assets/projects/thetatau/thetatau2.jpg";
 
 import sd1 from "./assets/projects/seniorDesign/sd1.jpeg";
 import sd2 from "./assets/projects/seniorDesign/sd2.jpeg";
-import sd3 from "./assets/projects/seniorDesign/sd3.jpg";
-import sd4 from "./assets/projects/seniorDesign/sd4.jpg";
 import sd5 from "./assets/projects/seniorDesign/sd5.jpg";
 import sd6 from "./assets/projects/seniorDesign/sd6.jpg";
 import sd7 from "./assets/projects/seniorDesign/sd7.jpg";
-import sd8 from "./assets/projects/seniorDesign/sd8.jpg";
 import sd9 from "./assets/projects/seniorDesign/sd9.jpg";
 
 import cad1 from "./assets/projects/solidworkPrints/photo1.jpg";
@@ -179,7 +176,7 @@ export const data = {
       {
         name: "Senior Design Project - PAEX",
         path: "senior-design",
-        images: [sd1, sd2, sd3, sd4, sd5, sd6, sd7, sd8, sd9],
+        images: [sd1, sd2, sd6, sd5, sd7, sd9],
         description:
           "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversaw the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities included researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also managed the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. I lead the wiring and coding efforts with my team. Additionally, I organized weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
       },
