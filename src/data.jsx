@@ -79,7 +79,10 @@ import cad2 from "./assets/projects/solidworkPrints/photo2.jpg";
 import cad3 from "./assets/projects/solidworkPrints/photo3.png";
 import cad4 from "./assets/projects/solidworkPrints/photo4.jpg";
 
-import ADMclass from "./assets/projects/solidworkPrints/photo4.jpg";
+import ADMclass from ".\assets\projects\adm\adm1.jpg";
+import ADMclass from ".\assets\projects\adm\adm2.jpg";
+import ADMclass from ".\assets\projects\adm\adm3.jpg";
+import ADMclass from ".\assets\projects\adm\adm4.jpg";
 
 export const data = {
   home: {
@@ -87,8 +90,8 @@ export const data = {
     subtitle: "Passionate Biomedical Engineer driven to innovate at the intersection of engineering and healthcare. ",
     about: [
       "Witnessing an open-heart surgery in high school sparked my fascination with the intricate work of surgeons and the immense potential of surgical robots to improve minimally invasive procedures. This experience ignited my passion for biomedical engineering, particularly in the field of robotic surgery.",
-      "As a Mechanical Engineering student with a Bioengineering minor at the University of Central Florida, I actively translate my passion into action.  During my internship at Grace Medical, I honed my technical skills by revising SolidWorks models and drawings of ear implants and tubes, while concurrently writing an engineering report to demonstrate clear communication alongside technical expertise. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
-      "I'm eager to leverage my skills and knowledge to contribute meaningfully to the advancement of robotic surgery and biomedical engineering. Explore my portfolio to see how my experiences can benefit your project, or contact me to discuss how I can contribute to the future of healthcare technology.",
+      "As a Master's of Medical Technology Design student at Duke Undersity with a background in Mechanical Engineering, I actively translate my passion into action. During my internships at Exactech and Grace Medical, I gained hands-on experience in medical device design and validation by collaborating with surgeons, applying design for manufacturing principles, writing QMS documentation, developing novel welding and prototyping techniques, and observing implant functionality in cadaver trials. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
+      "I'm eager to leverage my skills and knowledge to contribute meaningfully to the advancement of medical devices. Explore my portfolio to see how my experiences can benefit your project, or contact me to discuss how I can contribute to the future of healthcare technology.",
     ],
     pictures: [home_picture, about_picture],
     resume: resume,
@@ -139,6 +142,12 @@ export const data = {
     title: "Experience",
     itemList: [
         {
+            name: "Product and Development Engineering Internship with Exactech",
+            tabname: "Exactech",
+            images: [exactech1],
+            description: "During my internship at Exactech, I developed and executed a simulated use validation protocol for a cadaver lab study with eight orthopedic surgeons. I designed a tibial reamer in NX Siemens featuring a detachable, stackable mechanism and incorporated design-for-manufacturing principles to optimize metal machining. I also authored quality management system design control documentation, including technical reports, protocols, and gap analyses of ISO and ASTM standards. Additionally, I streamlined inspection processes by coordinating updates among vendors, drafting, and quality teams to ensure precise and consistent GD&T specifications on engineering prints."
+          },
+        {
             name: "Product and Development Engineering Internship with Grace Medical",
             tabname: "Grace Medical",
             images: [gracemed1, gracemed2, gracemed3],
@@ -149,12 +158,6 @@ export const data = {
             tabname: "BioDesign",
             images: [biodesign1, biodesign2, biodesign3],
             description: "At the BioDesign Clinical Immersion Internship, I attended Hanger’s Clinic, Orlando Health, and Brooke’s Rehab. Here, I collaborated with physical therapists and patients to identify clinical needs and translate them into practical solutions. I brainstormed 110 engineering design ideas aimed at addressing and enhancing the challenges faced by clinicians in their daily practice. Additionally, we tried various types of physical therapy equipment, as seen in the accompanying images, to better understand their functionality and identify potential areas for improvement."
-        },
-        {
-            name: "Product and Development Engineering Internship with Exactech",
-            tabname: "Exactech",
-            images: [exactech1],
-            description: "During my Grace Medical Internship, I revised SolidWorks models and drawings of ear implants and tubes while concurrently writing an engineering report. I developed a technique for laser welding exotic alloys used in implants, enhancing their manufacturability. I designed and manufactured a Tympanic Membrane Simulator to enable new product Design Validation of ear tubes. I participated in the implant trial at UT's cadaver lab, observing the product's functionality in cadaver specimens. I produced 3D printed and injection silicone molded models of ear anatomy and the tympanic membrane for marketing purposes. Additionally, I created and modified multiple engineering reports, COs, drawings, and controlled documents within the QMS. I conducted testing on novel manufacturing processes, compiling and presenting results in a comprehensive report. I utilized microscopes to assess implants and operated lathes, laser welders, and various machinery for manufacturing processes."
         }
     ]
   },
@@ -162,18 +165,18 @@ export const data = {
     title: "Projects",
     itemList: [
       {
-        name: "Advanced Design and Manufacturing Class Projects",
+        name: "Cystoscope Design",
         path: "admclass",
         images: [ADMclass],
         description:
-          "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversee the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities include researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also manage the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. Once the components are procured, I will lead the wiring and coding efforts with my team. Additionally, I organize weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
+          "Cystoscope Design was a Arduino Fusion CAD project for my Advanced Design and Manufacturing class.",
       },
       {
         name: "Senior Design Project - PAEX",
         path: "senior-design",
         images: [sd1, sd2, sd3],
         description:
-          "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversee the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities include researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also manage the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. Once the components are procured, I will lead the wiring and coding efforts with my team. Additionally, I organize weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
+          "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversaw the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities included researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also managed the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. I lead the wiring and coding efforts with my team. Additionally, I organized weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
       },
       {
         name: "Theta Tau",
