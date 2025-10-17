@@ -24,9 +24,9 @@ function NavBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Research", path: "/research" },
-    { name: "Experience", path: "/experience" },
     { name: "Projects", path: "/projects" },
+    { name: "Experience", path: "/experience" },
+    { name: "Research", path: "/research" },
   ];
 
   const handleDrawerToggle = () => {

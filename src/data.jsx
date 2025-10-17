@@ -91,9 +91,10 @@ export const data = {
     title: "Lauren Paffrath",
     subtitle: "Passionate Biomedical Engineer driven to innovate at the intersection of engineering and healthcare. ",
     about: [
-      "Witnessing an open-heart surgery in high school sparked my fascination with the intricate work of surgeons and the immense potential of surgical robots to improve minimally invasive procedures. This experience ignited my passion for biomedical engineering, particularly in the field of robotic surgery.",
-      "Currently pursuing a Master's in Medical Technology Design at Duke University building on my Mechanical Engineering background, I turn my passion into action. During my internships at Exactech and Grace Medical, I gained hands-on experience in medical device design and validation by collaborating with surgeons, applying design for manufacturing principles, writing QMS documentation, developing novel welding and prototyping techniques, and observing implant functionality in cadaver trials. I further explored the broader impact of biomedical engineering by designing an assistive rehabilitation device in my Honors Undergraduate Thesis.",
-      "I'm eager to leverage my skills and knowledge to contribute meaningfully to the advancement of medical devices. Explore my portfolio to see how my experiences can benefit your project, or contact me to discuss how I can contribute to the future of healthcare technology.",
+      "Witnessing open-heart surgery inspired my passion for engineering innovations that advance health care. I’m an M.Eng student in Medical Technology Design at Duke University with a B.S. in Mechanical Engineering from UCF.",
+      "Through product development internships at Exactech and Grace Medical, I designed and iterated surgical instruments and implants, collaborating with cross-functional teams to enhance functionality, manufacturability, and usability. My research and senior design projects span assistive robotics, rehabilitation devices, and MRI-guided surgical systems.",
+      "This website highlights my recent projects, professional experience, and research in medical devices.",
+      "Specialties: CAD (SolidWorks | NX Siemens | Fusion) • Prototyping • DFM • Technical Writing • Excel • Python • MATLAB",
     ],
     pictures: [home_picture, about_picture],
     resume: resume,
@@ -167,11 +168,13 @@ export const data = {
     title: "Projects",
     itemList: [
       {
-        name: "Cystoscope Design",
+        name: "Redesign Cystoscope Project",
         path: "admclass",
         images: [ADM1, ADM2, ADM3],
         description:
-          "Cystoscope Design was a Arduino Fusion CAD project for my Advanced Design and Manufacturing class.",
+          `Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients.
+           The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging.
+           To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching and clay modeling to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding.`,
       },
       {
         name: "Senior Design Project - PAEX",
@@ -179,13 +182,6 @@ export const data = {
         images: [sd1, sd2, sd6, sd5, sd7, sd9],
         description:
           "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversaw the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities included researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also managed the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. I lead the wiring and coding efforts with my team. Additionally, I organized weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
-      },
-      {
-        name: "Theta Tau",
-        path: "theta-tau",
-        images: [thetatau1, thetatau2],
-        description:
-          "During my time in Theta Tau engineering fraternity, I successfully hosted professional, community service, and recreational events attended by over 150 people, all while managing a budget of $2,500. I also coordinated extensive outreach efforts through college-wide emails, Remind lists, social media platforms, and by speaking in over 100 class sessions, ensuring widespread engagement and participation in fraternity activities.",
       },
       {
         name: "Biomedical Engineering Society",
