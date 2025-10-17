@@ -26,15 +26,15 @@ import irl1 from "./assets/research/irl/irl1.jpg";
 import irl2 from "./assets/research/irl/irl2.jpg";
 
 //imports for experience
-import biodesign1 from "./assets/experience/bioDesign/BioDesign Intership.jpg";
+import biodesign1 from "./assets/experience/bioDesign/BioDesign Internship.jpg";
 import biodesign2 from "./assets/experience/bioDesign/BioDesign Internship2.jpg";
 import biodesign3 from "./assets/experience/bioDesign/BioDesign Internship 3.jpg";
 
-import gracemed1 from "./assets/experience/graceMedical/Gracemedical logo.png"
-import gracemed2 from "./assets/experience/graceMedical/Grace Medical Internship 2.jpg"
-import gracemed3 from "./assets/experience/graceMedical/Grace Medical Internship3.jpg"
+import gracemed1 from "./assets/experience/graceMedical/Gracemedical logo.png";
+import gracemed2 from "./assets/experience/graceMedical/Grace Medical Internship 2.jpg";
+import gracemed3 from "./assets/experience/graceMedical/Grace Medical Internship3.jpg";
 
-import exactech1 from "./assets/experience/exactech/exactech1.jpeg"
+import exactech1 from "./assets/experience/exactech/exactech1.jpeg";
 
 //imports for projects
 import bmes1 from "./assets/projects/bmes/bmes1.jpg";
@@ -168,7 +168,7 @@ export const data = {
     title: "Projects",
     itemList: [
       {
-        name: "Redesign Cystoscope Project",
+        name: "Redesign Cystoscope",
         path: "admclass",
         images: [ADM1, ADM2, ADM3],
         description:
