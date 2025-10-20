@@ -26,16 +26,16 @@ import irl1 from "./assets/research/irl/irl1.jpg";
 import irl2 from "./assets/research/irl/irl2.jpg";
 
 //imports for experience
-import biodesign1 from "./assets/experience/bioDesign/BioDesign Internship.jpg";
-import biodesign2 from "./assets/experience/bioDesign/BioDesign Internship2.jpg";
-import biodesign3 from "./assets/experience/bioDesign/BioDesign Internship 3.jpg";
+import biodesign1 from "./assets/experience/bioDesign/BioDesignInternship.jpg";
+import biodesign2 from "./assets/experience/bioDesign/BioDesignInternship2.jpg";
+import biodesign3 from "./assets/experience/bioDesign/BioDesignInternship3.jpg";
 
 import gracemed1 from "./assets/experience/graceMedical/Gracemedicallogo.png";
 import gracemed2 from "./assets/experience/graceMedical/Grace Medical Internship 2.jpg";
 import gracemed3 from "./assets/experience/graceMedical/Grace Medical Internship3.jpg";
 
 import exactech1 from "./assets/experience/exactech/exactech1.jpeg";
-import exactech2 from "./assets/experience/exactech/exactech2.jpeg";
+import exactech2 from "./assets/experience/exactech/exactech2.jpg";
 
 //imports for projects
 import bmes1 from "./assets/projects/bmes/bmes1.jpg";
@@ -88,7 +88,7 @@ import ADM1 from "./assets/projects/adm/adm1.jpg";
 import ADM2 from "./assets/projects/adm/adm2.jpg";
 import ADM3 from "./assets/projects/adm/adm3.jpg";
 
-import dh1 from "./assets/projects/dh/dh1.jpg";
+import dh1 from "./assets/projects/dh/dh1.png";
 
 export const data = {
   home: {
