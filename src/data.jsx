@@ -30,11 +30,12 @@ import biodesign1 from "./assets/experience/bioDesign/BioDesign Internship.jpg";
 import biodesign2 from "./assets/experience/bioDesign/BioDesign Internship2.jpg";
 import biodesign3 from "./assets/experience/bioDesign/BioDesign Internship 3.jpg";
 
-import gracemed1 from "./assets/experience/graceMedical/Gracemedical logo.png";
+import gracemed1 from "./assets/experience/graceMedical/Gracemedicallogo.png";
 import gracemed2 from "./assets/experience/graceMedical/Grace Medical Internship 2.jpg";
 import gracemed3 from "./assets/experience/graceMedical/Grace Medical Internship3.jpg";
 
 import exactech1 from "./assets/experience/exactech/exactech1.jpeg";
+import exactech2 from "./assets/experience/exactech/exactech2.jpeg";
 
 //imports for projects
 import bmes1 from "./assets/projects/bmes/bmes1.jpg";
@@ -72,6 +73,7 @@ import thetatau2 from "./assets/projects/thetatau/thetatau2.jpg";
 
 import sd1 from "./assets/projects/seniorDesign/sd1.jpeg";
 import sd2 from "./assets/projects/seniorDesign/sd2.jpeg";
+import sd3 from "./assets/projects/seniorDesign/sd3.jpg";
 import sd5 from "./assets/projects/seniorDesign/sd5.jpg";
 import sd6 from "./assets/projects/seniorDesign/sd6.jpg";
 import sd7 from "./assets/projects/seniorDesign/sd7.jpg";
@@ -85,6 +87,8 @@ import cad4 from "./assets/projects/solidworkPrints/photo4.jpg";
 import ADM1 from "./assets/projects/adm/adm1.jpg";
 import ADM2 from "./assets/projects/adm/adm2.jpg";
 import ADM3 from "./assets/projects/adm/adm3.jpg";
+
+import dh1 from "./assets/projects/dh/dh1.jpg";
 
 export const data = {
   home: {
@@ -147,8 +151,8 @@ export const data = {
         {
             name: "Product and Development Engineering Internship with Exactech",
             tabname: "Exactech",
-            images: [exactech1],
-            description: "During my internship at Exactech, I developed and executed a simulated use validation protocol for a cadaver lab study with eight orthopedic surgeons. I designed a tibial reamer in NX Siemens featuring a detachable, stackable mechanism and incorporated design-for-manufacturing principles to optimize metal machining. I also authored quality management system design control documentation, including technical reports, protocols, and gap analyses of ISO and ASTM standards. Additionally, I streamlined inspection processes by coordinating updates among vendors, drafting, and quality teams to ensure precise and consistent GD&T specifications on engineering prints."
+            images: [exactech1, exactech2],
+            description: "During my internship at Exactech, I developed and executed a simulated use validation protocol for a cadaver lab study with eight orthopedic surgeons. I designed a tibial reamer in NX Siemens featuring a detachable, stackable mechanism and incorporated design-for-manufacturing principles to optimize metal machining. I also wrote quality management system design control documentation, including technical reports, protocols, and gap analyses of ISO and ASTM standards. Additionally, I streamlined inspection processes by coordinating updates among vendors, drafting, and quality teams to ensure precise and consistent GD&T specifications on engineering prints."
           },
         {
             name: "Product and Development Engineering Internship with Grace Medical",
@@ -172,19 +176,24 @@ export const data = {
         path: "admclass",
         images: [ADM1, ADM2, ADM3],
         description:
-          `Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients.
-           The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging.
-           To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching and clay modeling to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding.`,
+          "Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients. The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging. To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching and clay modeling to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding.",
       },
       {
-        name: "Senior Design Project - PAEX",
+        name: "Duke Design Health",
         path: "senior-design",
-        images: [sd1, sd2, sd6, sd5, sd7, sd9],
+        images: [dh1],
+        description:
+          "Currently in progress: interdisciplinary project developing a medical device to enhance stroke rehabilitation in clinical settings. Work involves conducting ethnographic research, defining client needs, evaluating existing solutions, and establishing design criteria. Collaboration between engineering and healthcare professionals supports the design and prototyping of a user-centered device that addresses real-world feasibility constraints. Emphasizes teamwork, creative problem-solving, and the practical application of design principles to deliver a functional and impactful prototype.",
+      },
+      {
+        name: "Push Assistive Exoboot Senior Design Project",
+        path: "senior-design",
+        images: [sd1, sd2, sd6, sd5, sd3, sd7],
         description:
           "As the team lead on the Push Assistive Exoboot (PAEX) senior design project, I oversaw the development of an advanced foot orthotic designed to assist individuals with gastrocnemius and ankle deficiencies in walking. My responsibilities included researching ankle-foot orthotic mechanisms to identify and select optimal components for the design process. I also managed the electrical aspects of the project, currently evaluating electrical components, motors, drivers, control boards, and pressure sensors to enable gait detection algorithms for the AFO. I lead the wiring and coding efforts with my team. Additionally, I organized weekly meetings to establish clear objectives, set goals, and delegate assignments for a team of five.",
       },
       {
-        name: "Biomedical Engineering Society",
+        name: "Biomedical Engineering Society Leadership Events",
         path: "bmes-events",
         images: [bmes1, bmes2, bmes3, bmes4],
         description:
@@ -193,18 +202,9 @@ export const data = {
       {
         name: "Interactive Chess Board",
         path: "interactive-chess-board",
-        images: [
-          chess4,
-          chess2,
-          chess3,
-          chess1,
-          chess8,
-          chess6,
-          chess7,
-          chess5,
-        ],
+        images: [chess4, chess2, chess3, chess1, chess8, chess6, chess7, chess5],
         description:
-          "The Interactive Chess Board is an innovative game featuring a 3D-printed robotic arm that moves chess pieces using a solenoid. The solenoid's magnetic field interacts with the ferromagnetic cores—iron fillings—inside the chess pieces, enabling precise movement around the board. This magnetic field not only facilitates piece manipulation but also introduces a unique release mechanism. Currently in its preliminary stages, the project offers multiple future directions, such as developing AI capabilities for the robotic arm to autonomously decide moves or implementing a panel control system. The continuation of this project promises to enhance future modules with a cutting-edge experience.",
+          "The Interactive Chess Board is an innovative game featuring a 3D-printed robotic arm that moves chess pieces using a solenoid. The solenoid's magnetic field interacts with the ferromagnetic cores inside the chess pieces, enabling precise movement around the board. This magnetic field not only facilitates piece manipulation but also introduces a unique release mechanism. Currently in its preliminary stages, the project offers multiple future directions, such as developing AI capabilities for the robotic arm to autonomously decide moves or implementing a panel control system. The continuation of this project promises to enhance future modules with a cutting-edge experience.",
       },
       {
         name: "Chocolate Digital Dessert Designer",
@@ -228,11 +228,11 @@ export const data = {
           "Flux Flow establishes direct communication between a person's presence and specific room air conditioning. As an individual moves between rooms, the air conditioning adjusts to their location, guided by location sensors that detect light presence in each room. I wired the connections between the light sensors and air ducts to control the airflow panels, while my partner focused on the design aspect. This innovative system conserves energy and reduces costs for homeowners by directing air only where it is needed, maintaining a continuous and efficient airflow throughout the house.",
       },
       {
-        name: "CAD projects",
+        name: "CAD Design and 3D Printing Projects",
         path: "cad-projects",
-        images: [cad1, cad2, cad3, cad4],
+        images: [cad3, cad2, cad1, cad4],
         description:
-          "A personal project to explore Solidwork modeling and 3D printing.",
+          "A personal project to explore Solidwork modeling and 3D printing. Each design was created in Solidworks and printed using PLA filament on a Creality Ender 3 Pro printer. These projects allowed me to refine my CAD skills and experiment with various design techniques.",
       },
     ],
   },
