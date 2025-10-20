@@ -180,7 +180,7 @@ export const data = {
       },
       {
         name: "Duke Design Health",
-        path: "senior-design",
+        path: "duke-design-health",
         images: [dh1],
         description:
           "Currently in progress: interdisciplinary project developing a medical device to enhance stroke rehabilitation in clinical settings. Work involves conducting ethnographic research, defining client needs, evaluating existing solutions, and establishing design criteria. Collaboration between engineering and healthcare professionals supports the design and prototyping of a user-centered device that addresses real-world feasibility constraints. Emphasizes teamwork, creative problem-solving, and the practical application of design principles to deliver a functional and impactful prototype.",
