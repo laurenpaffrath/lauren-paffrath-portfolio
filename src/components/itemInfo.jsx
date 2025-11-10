@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 export default function ItemInfo() {
   const data = useLoaderData();
   const theme = useTheme();
-  const { name, images, description } = data;
+  const { name, images, description, video } = data;
   const isMediumScreen = useMediaQuery(theme.breakpoints.down('md')); // Adjust the breakpoint as needed
   
   const ProjectContainer = styled(Box)`
@@ -62,6 +62,21 @@ export default function ItemInfo() {
       <ProjectContainer>
         <SurroundText>{name}</SurroundText>
         <ImageContainer component="img" src={images[0]} />
+        {/* Video player (renders only if `video` exists) */}
+        {video && (
+          <Box sx={{ width: "100%", maxWidth: 900, margin: "0 auto", px: 2 }}>
+            <video
+              controls
+              width="100%"
+              poster={images?.[0]}
+              style={{ borderRadius: 12, marginTop: "1rem", display: "block" }}
+            >
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Box>
+        )}
+
         <CornerBorder sx={{ m: isMediumScreen ? '10px' : '50px' }}>
           <Typography sx={{ width: "80%", m: "auto" }} variant="h6">
             {description}

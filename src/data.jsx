@@ -88,6 +88,7 @@ import ADM1 from "./assets/projects/adm/scope1.png";
 import ADM2 from "./assets/projects/adm/scope2.png";
 import ADM3 from "./assets/projects/adm/scope3.png";
 import ADM4 from "./assets/projects/adm/scope4.png";
+import ADM5 from "./assets/projects/adm/scope5.mp4";
 
 import dh1 from "./assets/projects/dh/dh1.png";
 
@@ -176,6 +177,7 @@ export const data = {
         name: "Redesign Cystoscope",
         path: "admclass",
         images: [ADM1, ADM2, ADM3, ADM4],
+        video: ADM5,
         description:
           "Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients. The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging. To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching and clay modeling to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding.",
       },
