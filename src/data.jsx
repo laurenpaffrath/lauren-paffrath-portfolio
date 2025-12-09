@@ -68,16 +68,12 @@ import maze1 from "./assets/projects/mazeRacing/photo1.jpeg";
 import maze2 from "./assets/projects/mazeRacing/photo2.jpeg";
 import maze3 from "./assets/projects/mazeRacing/photo3.jpeg";
 
-import thetatau1 from "./assets/projects/thetatau/thetatau1.jpg";
-import thetatau2 from "./assets/projects/thetatau/thetatau2.jpg";
-
 import sd1 from "./assets/projects/seniorDesign/sd1.jpeg";
 import sd2 from "./assets/projects/seniorDesign/sd2.jpeg";
 import sd3 from "./assets/projects/seniorDesign/sd3.jpg";
 import sd5 from "./assets/projects/seniorDesign/sd5.jpg";
 import sd6 from "./assets/projects/seniorDesign/sd6.jpg";
 import sd7 from "./assets/projects/seniorDesign/sd7.jpg";
-import sd9 from "./assets/projects/seniorDesign/sd9.jpg";
 
 import cad1 from "./assets/projects/solidworkPrints/photo1.jpg";
 import cad2 from "./assets/projects/solidworkPrints/photo2.jpg";
@@ -89,8 +85,22 @@ import ADM2 from "./assets/projects/adm/scope2.png";
 import ADM3 from "./assets/projects/adm/scope3.png";
 import ADM4 from "./assets/projects/adm/scope4.png";
 import ADM5 from "./assets/projects/adm/scope5.mp4";
+import ADM6 from "./assets/projects/adm/scope6.png";
 
 import dh1 from "./assets/projects/dh/dh1.png";
+
+import mv1 from "./assets/projects/mitralvalve/mv1.png";
+import mv2 from "./assets/projects/mitralvalve/mv2.png";
+import mv3 from "./assets/projects/mitralvalve/mv3.png";
+import mv4 from "./assets/projects/mitralvalve/mv4.mp4";
+
+import vs1 from "./assets/projects/vaginalspec/vs1.png";
+import vs2 from "./assets/projects/vaginalspec/vs2.png";
+import vs3 from "./assets/projects/vaginalspec/vs3.png";
+import vs4 from "./assets/projects/vaginalspec/vs4.png";
+import vs5 from "./assets/projects/vaginalspec/vs5.png";
+import vs6 from "./assets/projects/vaginalspec/vs6.png";
+import vs7 from "./assets/projects/vaginalspec/vs7.mp4";
 
 export const data = {
   home: {
@@ -174,19 +184,35 @@ export const data = {
     title: "Projects",
     itemList: [
       {
-        name: "Redesign Cystoscope",
+        name: "Cystoscope Design",
         path: "admclass",
-        images: [ADM1, ADM2, ADM3, ADM4],
+        images: [ADM1, ADM2, ADM3, ADM4, ADM6],
         video: ADM5,
         description:
           "Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients. The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging. To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching and clay modeling to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding.",
+      },
+      {
+        name: "Speculum Design",
+        path: "vaginal-speculum-design",
+        images: [vs1, vs2, vs3, vs4, vs5, vs6],
+        video: vs7,
+        description:
+          "This project aimed to redesign the speculum with patient comfort and clinical usability in mind. The final polypropylene design features three evenly spaced pedals for uniform opening, smooth rounded edges, and a fine threaded inner mechanism that allows clinicians to precisely control expansion as it engages an internal rib. I validated the design through FEA, reinforcing high stress areas to achieve a safety factor of 2.29, and incorporated draft angles and tooling considerations for injection molding. A cost analysis estimated a production cost of $1.64 per unit, resulting in a device that is comfortable, effective, and manufacturable."
+      },
+      {
+        name: "Mitral Valve Ring Medical Image Reconstruction",
+        path: "mitral-valve-design",
+        images: [mv1, mv2, mv3],
+        video: mv4,
+        description:
+          "For this medical image reconstruction project, I used 3D Slicer software to reconstruct the mitral valve from MRI scans and then designed a custom mitral valve sewing cushion ring in Fusion 360 that conforms to the valve’s unique geometry. The mitral valve, located between the left atrium and left ventricle, plays a vital role in directing blood flow through the heart. Repair rings are used to maintain the valve’s natural shape, motion, and flexibility when additional structural support is required."
       },
       {
         name: "Duke Design Health",
         path: "duke-design-health",
         images: [dh1],
         description:
-          "Currently in progress: interdisciplinary project developing a medical device to enhance stroke rehabilitation in clinical settings. Work involves conducting ethnographic research, defining client needs, evaluating existing solutions, and establishing design criteria. Collaboration between engineering and healthcare professionals supports the design and prototyping of a user-centered device that addresses real-world feasibility constraints. Emphasizes teamwork, creative problem-solving, and the practical application of design principles to deliver a functional and impactful prototype.",
+          "Currently in progress: interdisciplinary project developing a medical device to enhance stroke rehabilitation in clinical settings. Work involves conducting research, defining client needs, evaluating existing solutions, and establishing design criteria. Collaboration between engineering and healthcare professionals supports the design and prototyping of a user centered device that addresses real world feasibility constraints. Emphasizes teamwork, creative problem solving, and the practical application of design principles to deliver a functional and impactful prototype.",
       },
       {
         name: "Push Assistive Exoboot Senior Design Project",
