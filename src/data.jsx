@@ -78,7 +78,6 @@ import sd7 from "./assets/projects/seniorDesign/sd7.jpg";
 import cad1 from "./assets/projects/solidworkPrints/photo1.jpg";
 import cad2 from "./assets/projects/solidworkPrints/photo2.jpg";
 import cad3 from "./assets/projects/solidworkPrints/photo3.png";
-import cad4 from "./assets/projects/solidworkPrints/photo4.jpg";
 
 import ADM1 from "./assets/projects/adm/scope1.png";
 import ADM2 from "./assets/projects/adm/scope2.png";
@@ -103,6 +102,10 @@ import vs5 from "./assets/projects/vaginalspec/vs5.png";
 import vs6 from "./assets/projects/vaginalspec/vs6.png";
 import vs7 from "./assets/projects/vaginalspec/vs7.mp4";
 
+import ckd1 from "./assets/projects/ckd/ckd1.png";
+import ckd2 from "./assets/projects/ckd/ckd2.png";
+import ckd3 from "./assets/projects/ckd/ckd3.png";
+
 export const data = {
   home: {
     title: "Lauren Paffrath",
@@ -126,7 +129,7 @@ export const data = {
         path: "thesis",
         images: [thesis1, thesis2, thesis3, thesis4, thesis5, thesis6],
         description:
-          "Throughout my Honors Undergraduate Thesis, I spearheaded the development of an assistive device that couples the arms to the ankle to aid with plantarflexion during push-off. To investigate gait patterns and results, I conducted a pilot study using EMG and IMU, and analyzed the data with Matlab. Additionally, I created and prototyped parts for the assistive rehab system, including pulleys, using SolidWorks and 3D printing.",
+          "Throughout my Honors Undergraduate Thesis, I spearheaded the development of an assistive device that couples the arms to the ankle to aid with plantarflexion during push off. To investigate gait patterns and results, I conducted a pilot study using EMG and IMU, and analyzed the data with Matlab. Additionally, I created and prototyped parts for the assistive rehab system, including pulleys, using SolidWorks and 3D printing.",
       },
       {
         name: "Conferences",
@@ -140,14 +143,14 @@ export const data = {
         path: "amelias-experiment",
         images: [alice1, alice2, alice3],
         description:
-          "I had the opportunity to participate in a pilot study in a master's thesis on the effects of the Arm-Leg Interactive Coupling Exosuit (ALICE). Throughout the sessions, I wore a metabolic rate mask, IMU (Inertial Measurement Unit), EMGs (Electromyography sensors), and pressure insoles to collect comprehensive data. It was an incredible experience to contribute to innovative biomedical engineering technology as a participant in this study.",
+          "I had the opportunity to participate in a pilot study in a master's thesis on the effects of the Arm-Leg Interactive Coupling Exosuit (ALICE). Throughout the sessions, I wore a metabolic rate mask, IMUs, EMGs, and pressure insoles to collect comprehensive data. It was an incredible experience to contribute to innovative biomedical engineering technology as a participant in this study.",
       },
       {
         name: "Interventional Robotics Lab",
         path: "interventional-robotics-lab",
         images: [irl2, irl1],
         description:
-          "In the Innovational Robotics Lab, I pioneered advanced methods to develop an autonomous system for drilling and performing knee arthroplasty. I managed the entire design process, encompassing research, brainstorming, and rapid prototyping, and used SolidWorks and 3D printing to test the prototypes. Additionally, I designed and constructed a 4-degree-of-freedom robotic manipulator for MRI-guided prostate needle biopsy, programming four rotational disks in Python to enhance accuracy by tracking and precisely locating target coordinates based on MRI guidance. Throughout my time at the lab, I attended three conferences and conducted two comprehensive experiments.",
+          "In the Innovational Robotics Lab, I pioneered advanced methods to develop an autonomous system for drilling and performing knee arthroplasty. I managed the entire design process, encompassing research, brainstorming, and rapid prototyping, and used SolidWorks and 3D printing to test the prototypes. Additionally, I designed and constructed a 4 degree of freedom robotic manipulator for MRI guided prostate needle biopsy, programming four rotational disks in Python to enhance accuracy by tracking and precisely locating target coordinates based on MRI guidance. Throughout my time at the lab, I attended three conferences and conducted two comprehensive experiments.",
       },
       {
         name: "WEAR Lab",
@@ -165,7 +168,7 @@ export const data = {
             name: "Product and Development Engineering Internship with Exactech",
             tabname: "Exactech",
             images: [exactech1, exactech2],
-            description: "During my internship at Exactech, I developed and executed a simulated use validation protocol for a cadaver lab study with eight orthopedic surgeons. I designed a tibial reamer in NX Siemens featuring a detachable, stackable mechanism and incorporated design-for-manufacturing principles to optimize metal machining. I also wrote quality management system design control documentation, including technical reports, protocols, and gap analyses of ISO and ASTM standards. Additionally, I streamlined inspection processes by coordinating updates among vendors, drafting, and quality teams to ensure precise and consistent GD&T specifications on engineering prints."
+            description: "During my internship at Exactech, I developed and executed a simulated use validation protocol for a cadaver lab study with eight orthopedic surgeons. I designed a tibial reamer in NX Siemens featuring a detachable, stackable mechanism and incorporated design for manufacturing principles to optimize metal machining. I also wrote quality management system design control documentation, including technical reports, protocols, and gap analyses of ISO and ASTM standards. Additionally, I streamlined inspection processes by coordinating updates among vendors, drafting, and quality teams to ensure precise and consistent GD&T specifications on engineering prints."
           },
         {
             name: "Product and Development Engineering Internship with Grace Medical",
@@ -177,7 +180,7 @@ export const data = {
             name: "BioDesign Clinical Immersion Internship",
             tabname: "BioDesign",
             images: [biodesign1, biodesign2, biodesign3],
-            description: "At the BioDesign Clinical Immersion Internship, I attended Hanger’s Clinic, Orlando Health, and Brooke’s Rehab. Here, I collaborated with physical therapists and patients to identify clinical needs and translate them into practical solutions. I brainstormed 110 engineering design ideas aimed at addressing and enhancing the challenges faced by clinicians in their daily practice. Additionally, we tried various types of physical therapy equipment, as seen in the accompanying images, to better understand their functionality and identify potential areas for improvement."
+            description: "At the BioDesign Clinical Immersion Internship, I attended Hanger’s Clinic, Orlando Health, and Brooke’s Rehab. I collaborated with physical therapists and patients to identify clinical needs and translate them into practical solutions. I brainstormed 110 engineering design ideas aimed at addressing and enhancing the challenges faced by clinicians in their daily practice. Additionally, we tried various types of physical therapy equipment, as seen in the accompanying images, to better understand their functionality and identify potential areas for improvement."
         }
     ]
   },
@@ -187,10 +190,10 @@ export const data = {
       {
         name: "Cystoscope Design",
         path: "admclass",
-        images: [ADM1, ADM2, ADM3, ADM4, ADM7, ADM6],
+        images: [ADM1, ADM2, ADM3, ADM4, ADM6, ADM7],
         video: ADM5,
         description:
-          "Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients. The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging. To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching and clay modeling to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding.",
+          "Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients. The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging. To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding. I also conducted FEA analysis on the device to ensure that it was safe to use.",
       },
       {
         name: "Speculum Design",
@@ -201,12 +204,19 @@ export const data = {
           "This project aimed to redesign the speculum with patient comfort and clinical usability in mind. The final polypropylene design features three evenly spaced pedals for uniform opening, smooth rounded edges, and a fine threaded inner mechanism that allows clinicians to precisely control expansion as it engages an internal rib. I validated the design through FEA, reinforcing high stress areas to achieve a safety factor of 2.29, and incorporated draft angles and tooling considerations for injection molding. A cost analysis estimated a production cost of $1.64 per unit, resulting in a device that is comfortable, effective, and manufacturable."
       },
       {
-        name: "Mitral Valve Ring Medical Image Reconstruction",
+        name: "Mitral Valve Medical Image Reconstruction",
         path: "mitral-valve-design",
         images: [mv1, mv2, mv3],
         video: mv4,
         description:
           "For this medical image reconstruction project, I used 3D Slicer software to reconstruct the mitral valve from MRI scans and then designed a custom mitral valve sewing cushion ring in Fusion 360 that conforms to the valve’s unique geometry. The mitral valve, located between the left atrium and left ventricle, plays a vital role in directing blood flow through the heart. Repair rings are used to maintain the valve’s natural shape, motion, and flexibility when additional structural support is required."
+      },
+      {
+        name: "Chronic Kidney Disease Prediction Model",
+        path: "chronic-kidney-disease-prediction-model",
+        images: [ckd1, ckd2, ckd3],
+        description:
+          "This predictive modeling project investigated whether additional biomarkers could enable earlier diagnosis of chronic kidney disease (CKD), a condition affecting about 37 million Americans and often progressing silently due to minimal early symptoms and diagnostic markers like eGFR and uACR that may appear normal until later stages. The UC Irvine dataset used for the analysis included 400 patients and 24 clinical parameters, with a slight imbalance between CKD-positive and CKD-negative cases (250 vs. 150). The analytical workflow involved imputing missing data with a Random Forest method, applying one-hot encoding, using PCA to examine data structure, applying PLS to identify features most associated with CKD, validating key predictors through Random Forest feature importance, and developing predictive models. Performance was evaluated using both the full feature set and the top four features through a train/test split and k-fold cross validation. The results were then published on an interactive Anvil website: https://great-glamorous-hyena.anvil.app"
       },
       {
         name: "Duke Design Health",
@@ -234,7 +244,7 @@ export const data = {
         path: "interactive-chess-board",
         images: [chess4, chess2, chess3, chess1, chess8, chess6, chess7, chess5],
         description:
-          "The Interactive Chess Board is an innovative game featuring a 3D-printed robotic arm that moves chess pieces using a solenoid. The solenoid's magnetic field interacts with the ferromagnetic cores inside the chess pieces, enabling precise movement around the board. This magnetic field not only facilitates piece manipulation but also introduces a unique release mechanism. Currently in its preliminary stages, the project offers multiple future directions, such as developing AI capabilities for the robotic arm to autonomously decide moves or implementing a panel control system. The continuation of this project promises to enhance future modules with a cutting-edge experience.",
+          "The Interactive Chess Board is an innovative game featuring a 3D-printed robotic arm that moves chess pieces using a solenoid. The solenoid's magnetic field interacts with the ferromagnetic cores inside the chess pieces, enabling precise movement around the board. This magnetic field not only facilitates piece manipulation but also introduces a unique release mechanism. Currently in its preliminary stages, the project offers multiple future directions, such as developing AI capabilities for the robotic arm to autonomously decide moves or implementing a panel control system. The continuation of this project promises to enhance future modules with a cutting edge experience.",
       },
       {
         name: "Chocolate Digital Dessert Designer",
@@ -248,7 +258,7 @@ export const data = {
         path: "maze-racing",
         images: [maze1, maze2, maze3],
         description:
-          "Robot Maze Racing was a project created for a UCF engineering competition, where our team competed in navigating random and unique mazes. Given only five minutes to study the course design before each run, we swiftly coded turns and bumper sensor responses in C language. Our efforts resulted in a 3rd place finish among 350 competing teams, demonstrating our ability to adapt and innovate under pressure.",
+          "Robot Maze Racing was a project created for a UCF engineering competition, where our team competed in navigating random and unique mazes. Given only five minutes to study the course design before each run, we swiftly coded turns and bumper sensor responses in C language. Our efforts resulted in a 3rd place finish among 350 competing teams.",
       },
       {
         name: "Flux Flow",
@@ -260,7 +270,7 @@ export const data = {
       {
         name: "CAD Design and 3D Printing Projects",
         path: "cad-projects",
-        images: [cad3, cad2, cad1, cad4],
+        images: [cad3, cad2, cad1],
         description:
           "A personal project to explore Solidwork modeling and 3D printing. Each design was created in Solidworks and printed using PLA filament on a Creality Ender 3 Pro printer. These projects allowed me to refine my CAD skills and experiment with various design techniques.",
       },
