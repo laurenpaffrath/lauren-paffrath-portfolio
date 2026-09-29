@@ -37,6 +37,10 @@ import gracemed3 from "./assets/experience/graceMedical/Grace Medical Internship
 import exactech1 from "./assets/experience/exactech/exactech1.jpeg";
 import exactech2 from "./assets/experience/exactech/exactech2.jpg";
 
+import asensus1 from "./assets/experience/asensus/asensus1.jpg";
+import asensus2 from "./assets/experience/asensus/asensus2.jpg";
+import asensus3 from "./assets/experience/asensus/asensus3.jpg";
+
 //imports for projects
 import bmes1 from "./assets/projects/bmes/bmes1.jpg";
 import bmes2 from "./assets/projects/bmes/bmes2.jpg";
@@ -111,8 +115,8 @@ export const data = {
     title: "Lauren Paffrath",
     subtitle: "Passionate Biomedical Engineer driven to innovate at the intersection of engineering and healthcare. ",
     about: [
-      "Witnessing open-heart surgery inspired my passion for engineering innovations that advance health care. I’m an M.Eng student in Medical Technology Design at Duke University with a B.S. in Mechanical Engineering from UCF.",
-      "Through product development internships at Exactech and Grace Medical, I designed and iterated surgical instruments and implants, collaborating with cross-functional teams to enhance functionality, manufacturability, and usability. My research and senior design projects span assistive robotics, rehabilitation devices, and MRI-guided surgical systems.",
+      "Witnessing open heart surgery inspired my passion for engineering innovations that advance health care. I’m an M.Eng student in Medical Technology Design at Duke University with a B.S. in Mechanical Engineering from UCF.",
+      "Through product development internships at Asensus Surgical, Exactech, and Grace Medical, I designed and iterated surgical instruments and implants, collaborating with cross functional teams to enhance functionality, manufacturability, and usability. My research and senior design projects span assistive robotics, rehabilitation devices, and MRI-guided surgical systems.",
       "This website highlights my recent projects, professional experience, and research in medical devices.",
       "Specialties: CAD (SolidWorks | NX Siemens | Fusion) • Prototyping • DFM • Technical Writing • Excel • Python • MATLAB",
     ],
@@ -165,22 +169,28 @@ export const data = {
     title: "Experience",
     itemList: [
         {
+            name: "Product and Development Engineering Internship with Asensus Surgical, part of Karl Storz",
+            tabname: "Asensus, part of Karl Storz",
+            images: [asensus1, asensus2, asensus3],
+            description: "During my internship at Asensus Surgical, I developed verification and validation tests for surgical controls by translating product requirements into force and accuracy test methods. I designed a custom SolidWorks fixture to control robotic arm positioning and improve benchtop test repeatability. I evaluated LUNA surgical arm assemblies to identify potential failure modes and support PFMEA risk assessments. Additionally, I developed an Instron test method to measure robotic handle control accuracy and investigate control slippage."
+          },  
+        {
             name: "Product and Development Engineering Internship with Exactech",
             tabname: "Exactech",
             images: [exactech1, exactech2],
-            description: "During my internship at Exactech, I developed and executed a simulated use validation protocol for a cadaver lab study with eight orthopedic surgeons. I designed a tibial reamer in NX Siemens featuring a detachable, stackable mechanism and incorporated design for manufacturing principles to optimize metal machining. I also wrote quality management system design control documentation, including technical reports, protocols, and gap analyses of ISO and ASTM standards. Additionally, I streamlined inspection processes by coordinating updates among vendors, drafting, and quality teams to ensure precise and consistent GD&T specifications on engineering prints."
+            description: "During my internship at Exactech, I developed and executed a simulated use cadaver lab protocol for a tibial tray handle with eight orthopedic surgeons. I designed a detachable, stackable tibial reamer in Siemens NX using design for manufacturing principles for additive manufacturing and metal machining. I also composed QMS design control documents and protocols supporting DHF development and performed ISO/ASTM gap analyses. Additionally, I coordinated vendor, drafting, and quality updates to clarify GD&T on drawings and improve inspection processes."
           },
         {
             name: "Product and Development Engineering Internship with Grace Medical",
             tabname: "Grace Medical",
             images: [gracemed1, gracemed2, gracemed3],
-            description: "During my Grace Medical Internship, I revised SolidWorks models and drawings of ear implants and tubes while concurrently writing an engineering report. I developed a technique for laser welding exotic alloys used in implants, enhancing their manufacturability. I designed and manufactured a Tympanic Membrane Simulator to enable new product Design Validation of ear tubes. I participated in the implant trial at UT's cadaver lab, observing the product's functionality in cadaver specimens. I produced 3D printed and injection silicone molded models of ear anatomy and the tympanic membrane for marketing purposes. Additionally, I created and modified multiple engineering reports, COs, drawings, and controlled documents within the QMS. I conducted testing on novel manufacturing processes, compiling and presenting results in a comprehensive report. I utilized microscopes to assess implants and operated lathes, laser welders, and various machinery for manufacturing processes."
+            description: "During my internship at Grace Medical, I developed a laser welding process for implant alloys to improve manufacturability and support process development. I built 3D printed and silicone molded ear anatomy and tympanic membrane models for marketing and demonstration purposes. I also observed implant trials at the UT cadaver lab and evaluated device functionality using surgeon feedback and cadaver specimens. Additionally, I updated SolidWorks implant and tube models and drawings to improve design consistency across devices."
         },
         {
             name: "BioDesign Clinical Immersion Internship",
             tabname: "BioDesign",
             images: [biodesign1, biodesign2, biodesign3],
-            description: "At the BioDesign Clinical Immersion Internship, I attended Hanger’s Clinic, Orlando Health, and Brooke’s Rehab. I collaborated with physical therapists and patients to identify clinical needs and translate them into practical solutions. I brainstormed 110 engineering design ideas aimed at addressing and enhancing the challenges faced by clinicians in their daily practice. Additionally, we tried various types of physical therapy equipment, as seen in the accompanying images, to better understand their functionality and identify potential areas for improvement."
+            description: "During the BioDesign Clinical Immersion Internship, I collaborated with physical therapists and patients to identify clinical needs and brainstorm potential engineering solutions. I developed a device concept and project plan focused on addressing the top identified user need: preventing patient falls during physical therapy sessions."
         }
     ]
   },
