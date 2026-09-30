@@ -39,7 +39,7 @@ import exactech2 from "./assets/experience/exactech/exactech2.jpg";
 
 import asensus1 from "./assets/experience/asensus/asensus1.jpg";
 import asensus2 from "./assets/experience/asensus/asensus2.jpg";
-import asensus3 from "./assets/experience/asensus/asensus3.jpg";
+import asensus3 from "./assets/experience/asensus/asensus3.png";
 
 //imports for projects
 import bmes1 from "./assets/projects/bmes/bmes1.jpg";
