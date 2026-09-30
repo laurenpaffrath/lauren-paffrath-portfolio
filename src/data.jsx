@@ -91,7 +91,7 @@ import ADM5 from "./assets/projects/adm/scope5.mp4";
 import ADM6 from "./assets/projects/adm/scope6.png";
 import ADM7 from "./assets/projects/adm/scope7.png";
 
-import dh1 from "./assets/projects/dh/dh1.png";
+import dh1 from "./assets/projects/dh/dh1saw.png";
 
 import mv1 from "./assets/projects/mitralvalve/mv1.png";
 import mv2 from "./assets/projects/mitralvalve/mv2.png";
@@ -206,6 +206,13 @@ export const data = {
           "Cystoscopes allow physicians to visualize the urinary bladder through the urethra, but existing designs are often outdated and uncomfortable to handle. I developed a redesigned cystoscope with improved ergonomics to enhance comfort and maneuverability for clinicians. The new form also features a non-threatening aesthetic suitable for use with conscious patients. The device design incorporated several functional requirements, including a power connection, inlet and outlet tubing for water flow, a flow valve control mechanism, and a module housing a photon engine for imaging. To guide the design process, I began by creating a mood board to establish the desired aesthetic direction, followed by sketching to explore form and ergonomics. The final model was developed in Fusion 360, incorporating draft angles to enable low-cost injection molding. I also conducted FEA analysis on the device to ensure that it was safe to use.",
       },
       {
+        name: "Smart Sternotomy Saw Design",
+        path: "duke-design-health",
+        images: [dh1],
+        description:
+          "Currently in Progress: Developing and testing Smart Sternotomy Saw, a predictive, auto stopping sternal saw for pediatric cardiac surgery that uses a sensing algorithm to detect tissue boundaries and limit cutting to bone. I led early stage product discovery by evaluating more than 250 clinical needs, conducting over 60 hours of surgeon observations and interviews, and translating findings into customer requirements. I created a competitive landscape comparing sternal saws and tissue detection technologies to identify opportunities for product differentiation.",
+      },
+      {
         name: "Speculum Design",
         path: "vaginal-speculum-design",
         images: [vs1, vs2, vs3, vs4, vs5, vs6],
@@ -228,13 +235,7 @@ export const data = {
         description:
           "This predictive modeling project investigated whether additional biomarkers could enable earlier diagnosis of chronic kidney disease (CKD), a condition affecting about 37 million Americans and often progressing silently due to minimal early symptoms and diagnostic markers like eGFR and uACR that may appear normal until later stages. The UC Irvine dataset used for the analysis included 400 patients and 24 clinical parameters, with a slight imbalance between CKD positive and CKD negative cases (250 vs. 150). The analytical workflow involved imputing missing data with a Random Forest method, applying one-hot encoding, using PCA to examine data structure, applying PLS to identify features most associated with CKD, validating key predictors through Random Forest feature importance, and developing predictive models. Performance was evaluated using both the full feature set and the top four features through a train/test split and k-fold cross validation. The results were then published on an interactive Anvil website: https://great-glamorous-hyena.anvil.app"
       },
-      {
-        name: "Duke Design Health",
-        path: "duke-design-health",
-        images: [dh1],
-        description:
-          "Currently in progress: interdisciplinary project developing a medical device to enhance stroke rehabilitation in clinical settings. Work involves conducting research, defining client needs, evaluating existing solutions, and establishing design criteria. Collaboration between engineering and healthcare professionals supports the design and prototyping of a user centered device that addresses real world feasibility constraints. Emphasizes teamwork, creative problem solving, and the practical application of design principles to deliver a functional and impactful prototype.",
-      },
+      
       {
         name: "Push Assistive Exoboot Senior Design Project",
         path: "senior-design",
