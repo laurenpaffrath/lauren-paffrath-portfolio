@@ -208,8 +208,7 @@ export const data = {
       {
         name: "Smart Sternotomy Saw Design",
         path: "duke-design-health",
-        coverImage: dh1,
-        images: [],
+        images: [dh1],
         description:
           "Currently in progress: Developing and testing Smart Sternotomy Saw, a predictive, auto stopping sternal saw for pediatric cardiac surgery that uses a sensing algorithm to detect tissue boundaries and limit cutting to bone. I led early stage product discovery by evaluating more than 250 clinical needs, conducting over 60 hours of surgeon observations and interviews, and translating findings into customer requirements. I created a competitive landscape comparing sternal saws and tissue detection technologies to identify opportunities for product differentiation.",
       },

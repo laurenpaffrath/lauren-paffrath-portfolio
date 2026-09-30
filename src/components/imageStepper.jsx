@@ -10,14 +10,9 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-function ImageStepper({images = []}) {
+function ImageStepper({images}) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-
-  if (images.length === 0) {
-    return null;
-  }
-
   const maxSteps = images.length;
 
   const handleNext = () => {
