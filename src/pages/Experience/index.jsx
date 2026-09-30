@@ -31,10 +31,26 @@ function a11yProps(index) {
 }
 
 const StyledTab = styled((props) => <Tab {...props} />)(
-    ({ theme }) => ({
-      color: theme.palette.white.main,
-    }),
-  );
+ ({ theme }) => ({
+    color: "#ffffff",
+    fontSize: "16px",
+    fontWeight: 500,
+    textTransform: "none",
+    minWidth: "auto",
+    padding: "12px 20px",
+    transition: "all 0.2s ease",
+
+    "&:hover": {
+      color: theme.palette.tertiary.main,
+      backgroundColor: "rgba(255, 255, 255, 0.08)",
+    },
+
+    "&.Mui-selected": {
+      color: theme.palette.tertiary.main,
+      fontWeight: 700,
+    },
+  })
+);
 
 const SelectedContent = styled(Box)`
   display: flex;
@@ -111,12 +127,23 @@ export default function Experience(props) {
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
-          sx={{color: "#fff", marginX: isMediumScreen ? '10px' : '30px'}}
-        >
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="Experience tabs"
+          sx={{
+            marginX: isMediumScreen ? "10px" : "30px",
+
+            "& .MuiTabs-indicator": {
+              height: "4px",
+              borderRadius: "4px",
+              backgroundColor: theme.palette.tertiary.main,
+    },
+  }}
+>
           <StyledTab label={itemList[0].tabname} {...a11yProps(0)} />
           <StyledTab label={itemList[1].tabname} {...a11yProps(1)} />
           <StyledTab label={itemList[2].tabname} {...a11yProps(2)} />
+          <StyledTab label={itemList[3].tabname} {...a11yProps(3)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -128,7 +155,10 @@ export default function Experience(props) {
        <CustomTabPanel value={value} index={2}>
         <TabContent info={itemList[2]}/>
       </CustomTabPanel>
-      </Box>
+      <CustomTabPanel value={value} index={3}>
+        <TabContent info={itemList[3]}/>
+      </CustomTabPanel>
+    </Box> 
     </>
   );
 }

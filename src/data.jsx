@@ -169,19 +169,19 @@ export const data = {
     title: "Experience",
     itemList: [
         {
-            name: "Product and Development Engineering Internship with Asensus Surgical, part of Karl Storz",
-            tabname: "Asensus, part of Karl Storz",
+            name: "Product Development Engineering Internship with Asensus Surgical",
+            tabname: "Asensus",
             images: [asensus1, asensus2, asensus3],
-            description: "During my internship at Asensus Surgical, I developed verification and validation tests for surgical controls by translating product requirements into force and accuracy test methods. I designed a custom SolidWorks fixture to control robotic arm positioning and improve benchtop test repeatability. I evaluated LUNA surgical arm assemblies to identify potential failure modes and support PFMEA risk assessments. Additionally, I developed an Instron test method to measure robotic handle control accuracy and investigate control slippage."
+            description: "During my internship at Asensus Surgical, I developed verification and validation tests for surgical controls by translating product requirements into force and accuracy test methods. I designed a custom test fixture in SolidWorks to control robotic arm positioning and improve benchtop test repeatability. I evaluated LUNA surgical arm assemblies to identify potential failure modes and support PFMEA risk assessments. Additionally, I developed an test method using Instron's Bluehill Universal to measure robotic handle control accuracy and investigate control slippage."
           },  
         {
-            name: "Product and Development Engineering Internship with Exactech",
+            name: "Product Development Engineering Internship with Exactech",
             tabname: "Exactech",
             images: [exactech1, exactech2],
             description: "During my internship at Exactech, I developed and executed a simulated use cadaver lab protocol for a tibial tray handle with eight orthopedic surgeons. I designed a detachable, stackable tibial reamer in Siemens NX using design for manufacturing principles for additive manufacturing and metal machining. I also composed QMS design control documents and protocols supporting DHF development and performed ISO/ASTM gap analyses. Additionally, I coordinated vendor, drafting, and quality updates to clarify GD&T on drawings and improve inspection processes."
           },
         {
-            name: "Product and Development Engineering Internship with Grace Medical",
+            name: "Product Development Engineering Internship with Grace Medical",
             tabname: "Grace Medical",
             images: [gracemed1, gracemed2, gracemed3],
             description: "During my internship at Grace Medical, I developed a laser welding process for implant alloys to improve manufacturability and support process development. I built 3D printed and silicone molded ear anatomy and tympanic membrane models for marketing and demonstration purposes. I also observed implant trials at the UT cadaver lab and evaluated device functionality using surgeon feedback and cadaver specimens. Additionally, I updated SolidWorks implant and tube models and drawings to improve design consistency across devices."
